@@ -1,10 +1,11 @@
- /** @type {import('tailwindcss').Config} */
- export default {
-  content: ["./src/**/*.{html,js}"],
+module.exports = {
+  content: ["./src/index.html", "./src/**/*.{html,js}"],
   theme: {
-    extend: {fontFamily: {
-      roboto: ["Roboto", "sans-serif"],
-    },},
+      extend: {
+          colors: {
+              primary: '#4BC1D2',
+          },
+      },
   },
   plugins: [],
 }
